@@ -32,5 +32,5 @@
     "mocha": "^3.5.0",
     "should": "^12.0.0"
   },
-  "license": "proprietary"
+  "license": "MIT"
 }
