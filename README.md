@@ -1,4 +1,4 @@
-[![Build Status](https://secure.travis-ci.org/DevoInc/js-helper.png)](http://travis-ci.org/DevoInc/js-helper)
+[![Build Status](https://secure.travis-ci.org/DevoInc/js-helper.svg)](http://travis-ci.org/DevoInc/js-helper)
 
 # Devo JavaScript SDK Helper Library.
 
