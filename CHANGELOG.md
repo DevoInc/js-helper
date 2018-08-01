@@ -2,6 +2,11 @@
 
 Change log.
 
+## Version 1.0.3
+
+* Ignore trailing slash '/' in URLs.
+* Do not validate credentials without URL.
+
 ## Version 1.0.2
 
 Enabled [Travis-CI](https://travis-ci.com/DevoInc/js-helper).

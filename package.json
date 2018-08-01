@@ -1,6 +1,6 @@
 {
   "name": "@devo/js-helper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Devo JavaScript helper library",
   "author": "Devo Dev Team",
   "eslintConfig": {
