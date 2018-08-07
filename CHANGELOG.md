@@ -2,6 +2,10 @@
 
 Change log.
 
+## Version 1.1.0
+
+Change token to apiToken.
+
 ## Version 1.0.3
 
 * Ignore trailing slash '/' in URLs.
