@@ -13,7 +13,7 @@ const apiKey =
   'fakekey';
 const apiSecret =
   'fakesecret';
-const token = 'faketoken';
+const apiToken = 'faketoken';
 const url = 'http://test.test/test';
 
 describe('Config validation', () => {
@@ -78,10 +78,10 @@ describe('Config validation', () => {
     config.validate(opc).should.equal(true);
   });
 
-  it('parses valid config with query param and token', () => {
+  it('parses valid config with query param and apiToken', () => {
     const opc = config.create({
       url,
-      token,
+      apiToken,
     }).parseQuery({
       dateFrom,
       dateTo,
@@ -103,10 +103,10 @@ describe('Config validation', () => {
     config.validate(opc).should.equal(true);
   });
 
-  it('parses valid config with queryId param and token', () => {
+  it('parses valid config with queryId param and apiToken', () => {
     const opc = config.create({
       url,
-      token,
+      apiToken,
     }).parseQuery({
       dateFrom,
       dateTo,
@@ -118,7 +118,7 @@ describe('Config validation', () => {
   it('parses URL that ends with and without /', () => {
     const opc1 = config.create({
       url: 'http://test.test/test/',
-      token,
+      apiToken,
     }).parseQuery({
       dateFrom,
       dateTo,
@@ -126,7 +126,7 @@ describe('Config validation', () => {
     });
     const opc2 = config.create({
       url,
-      token,
+      apiToken,
     }).parseQuery({
       dateFrom,
       dateTo,
