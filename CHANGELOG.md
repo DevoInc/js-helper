@@ -2,6 +2,11 @@
 
 Change log.
 
+## Version 1.2.0
+
+* Make parameter `dateTo` optional.
+* Do not send `body.to` without `dateTo`, for continuous queries.
+
 ## Version 1.1.0
 
 Change token to apiToken.
