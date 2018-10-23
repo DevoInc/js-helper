@@ -37,7 +37,10 @@ describe('Config validation', () => {
   });
 
   it('parses invalid config without url', () => {
-    const opc = config.create({}).parseQuery({
+    const opc = config.create({
+      apiKey,
+      apiSecret,
+    }).parseQuery({
       dateFrom,
       dateTo,
       queryId: '123456',
@@ -56,6 +59,7 @@ describe('Config validation', () => {
 
   it('parses invalid config without query or queryId', () => {
     const opc = config.create({
+      url,
       apiKey,
       apiSecret,
     }).parseQuery({
@@ -133,6 +137,31 @@ describe('Config validation', () => {
       queryId,
     });
     opc1.url.should.equal(opc2.url)
+  });
+
+  it('parses valid config without dateFrom', () => {
+    const opc = config.create({
+      url,
+      apiKey,
+      apiSecret,
+    }).parseQuery({
+      dateTo,
+      queryId,
+    });
+    config.validate(opc).should.equal(true);
+  });
+
+  it('parses valid config without dateTo', () => {
+    const opc = config.create({
+      url,
+      apiKey,
+      apiSecret,
+    }).parseQuery({
+      dateFrom,
+      queryId,
+    });
+    config.validate(opc).should.equal(true);
+    (opc.body.to === undefined).should.equal(true);
   });
 });
 
