@@ -2,6 +2,10 @@
 
 Change log.
 
+## Version 1.3.0
+
+* Accept options `skip` and `limit`.
+
 ## Version 1.2.0
 
 * Make parameter `dateTo` optional.
