@@ -163,5 +163,20 @@ describe('Config validation', () => {
     config.validate(opc).should.equal(true);
     (opc.body.to === undefined).should.equal(true);
   });
+
+  it('parses valid config with skip and limit', () => {
+    const opc = config.create({
+      url,
+      apiKey,
+      apiSecret,
+    }).parseQuery({
+      dateFrom,
+      dateTo,
+      query,
+      skip: 10,
+      limit: 10,
+    });
+    config.validate(opc).should.equal(true);
+  });
 });
 
