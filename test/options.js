@@ -178,5 +178,25 @@ describe('Config validation', () => {
     });
     config.validate(opc).should.equal(true);
   });
+
+  it('parse valid stream process parameters (default value)', () => {
+    const streamOpts = config.create({
+      url,
+      apiKey,
+      apiSecret,
+    }).parseStreamProcessParams();
+
+    streamOpts.mapMetadata.should.equal(true);
+  });
+
+  it('parse valid stream process parameters (modified)', () => {
+    const streamOpts = config.create({
+      url,
+      apiKey,
+      apiSecret,
+    }).parseStreamProcessParams({ mapMetadata: false });
+
+    streamOpts.mapMetadata.should.equal(false);
+  });
 });
 
