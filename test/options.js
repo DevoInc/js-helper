@@ -178,5 +178,18 @@ describe('Config validation', () => {
     });
     config.validate(opc).should.equal(true);
   });
-});
 
+  it('parses valid config with ipAsString', () => {
+    const opc = config.create({
+      url,
+      apiKey,
+      apiSecret,
+    }).parseQuery({
+      dateFrom,
+      dateTo,
+      query,
+      ipAsString: true
+    });
+    config.validate(opc).should.equal(true);
+  });
+});
