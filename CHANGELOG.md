@@ -2,6 +2,10 @@
 
 Change log.
 
+## Version 1.4.0
+
+* Accept option `ipAsString`.
+
 ## Version 1.3.0
 
 * Accept options `skip` and `limit`.
@@ -31,4 +35,3 @@ Changed license to MIT in package.json.
 ## Version 1.0.0
 
 First public release.
-
