@@ -192,4 +192,18 @@ describe('Config validation', () => {
     });
     config.validate(opc).should.equal(true);
   });
+
+  it('parses valid config with vaultName', () => {
+    const opc = config.create({
+      url,
+      apiKey,
+      apiSecret,
+    }).parseQuery({
+      dateFrom,
+      dateTo,
+      query,
+      vaultName: 'normal'
+    });
+    config.validate(opc).should.equal(true);
+  });
 });
