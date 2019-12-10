@@ -2,6 +2,10 @@
 
 Change log.
 
+## Version 1.5.0
+
+* Accept option `vaultName`.
+
 ## Version 1.4.0
 
 * Accept option `ipAsString`.
