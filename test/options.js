@@ -206,4 +206,19 @@ describe('Config validation', () => {
     });
     config.validate(opc).should.equal(true);
   });
+
+
+  it('parses valid config with progressInfo', () => {
+    const opc = config.create({
+      url,
+      apiKey,
+      apiSecret,
+    }).parseQuery({
+      dateFrom,
+      dateTo,
+      query,
+      progressInfo: true
+    });
+    config.validate(opc).should.equal(true);
+  });
 });

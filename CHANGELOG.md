@@ -2,6 +2,10 @@
 
 Change log.
 
+## Version 1.6.0
+
+* Accept option `progressInfo`. It is only used by the backend if format is 'json/simple/compact'
+
 ## Version 1.5.0
 
 * Accept option `vaultName`.
