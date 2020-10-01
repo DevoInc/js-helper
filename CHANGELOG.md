@@ -2,6 +2,10 @@
 
 Change log.
 
+## Version 1.6.1
+
+* Fix repository url inside package.json
+
 ## Version 1.6.0
 
 * Accept option `progressInfo`. It is only used by the backend if format is 'json/simple/compact'
