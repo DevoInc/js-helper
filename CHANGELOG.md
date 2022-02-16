@@ -2,6 +2,10 @@
 
 Change log.
 
+## Version 1.6.2
+
+* Upgraded `crypto-js` dependency to the latest version
+
 ## Version 1.6.1
 
 * Fix repository url inside package.json
