@@ -1,6 +1,6 @@
 {
   "name": "@devo/js-helper",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "Devo JavaScript helper library",
   "author": "Devo Dev Team",
   "eslintConfig": {
@@ -25,7 +25,7 @@
     "Devo"
   ],
   "dependencies": {
-    "crypto-js": "3.1.9-1"
+    "crypto-js": "4.1.1"
   },
   "devDependencies": {
     "eslint": "^4.5.0",
