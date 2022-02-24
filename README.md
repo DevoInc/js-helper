@@ -1,5 +1,3 @@
-[![Build Status](https://api.travis-ci.com/DevoInc/js-helper.svg)](http://travis-ci.com/DevoInc/js-helper)
-
 # Devo JavaScript SDK Helper Library.
 
 This library contains helper functions for the JavaScript SDKs.
