@@ -2,6 +2,12 @@
 
 Change log.
 
+## Version 1.6.3
+
+* Clean up package contents
+* Remove Travis CI pipeline
+* Clean npm configuration
+
 ## Version 1.6.2
 
 * Upgraded `crypto-js` dependency to the latest version
