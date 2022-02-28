@@ -1,6 +1,6 @@
 {
   "name": "@devo/js-helper",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "Devo JavaScript helper library",
   "author": "Devo Dev Team",
   "eslintConfig": {
@@ -10,6 +10,10 @@
     }
   },
   "main": "index.js",
+  "files": [
+    "index.js",
+    "lib/"
+  ],
   "scripts": {
     "test": "mocha --reporter list --timeout 10000 test/*.js",
     "posttest": "npm run lint",
