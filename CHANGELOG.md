@@ -2,6 +2,10 @@
 
 Change log.
 
+## Version 2.0.1
+
+* The separator between events (\\r\\n by default) can be changed in the options parameter.
+
 ## Version 1.6.3
 
 * Clean up package contents
