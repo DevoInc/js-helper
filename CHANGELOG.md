@@ -2,6 +2,10 @@
 
 Change log.
 
+## Version 2.0.2
+
+* Fix vulnerability (SNYK-JS-CRYPTOJS-6028119).
+
 ## Version 2.0.1
 
 * The separator between events (\\r\\n by default) can be changed in the options parameter.
